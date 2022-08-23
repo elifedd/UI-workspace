@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #F5F5F7;
+    height: 100%;
+}
+
+.nav-bar {
+    max-width: 252px;
+    border-right: 1px solid #F5F5F7;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.logo > h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 12px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item {
+    padding: 10px 20px;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    opacity: 40%;
+    transition: .3s;
+}
+
+.item > a {
+    color: black;
+}
+
+.active, .item:hover {
+    width: 188px;
+    height: 44px;
+    background: #F5F5F7;
+    border-radius: 10px;
+    opacity: 100%;
+}
+
+.help-box {
+    max-width: 188px;
+    max-height: 248px;
+    background-color: #141522;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.help-box > h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 71px;
+    margin-bottom: 12px;
+}
+
+.help-box > p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 45px;
+}
+
+.help-box > button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+button > a {
+    color: black;
+}
+
+.top-container {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F5F5F7;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-container {
+    height: 52px;
+    display: flex;
+    gap: 24px;
+}
+
+.icon-container > h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.icon-wrapper {
+    border-radius: 50%;
+    padding: 14px;
+    border: 1px solid #F5F5F7;
+    background-color: #FFFFFF;
+}
+
+.icon {
+    opacity: 40%;
+}
+
+.icon:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 116px);
+}
+
+.left {
+    max-width: 400px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #F5F5F7;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    width: 95%;
+}
+
+.search-name {
+    width: 100%;
+    display: flex;
+    border: 1px solid #F5F5F7;
+    border-radius: 10px;
+    padding: 14px 16px 14px 24px;
+    margin-bottom: 16px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+}
+
+.message-container > hr {
+    border: none;
+    background-color: #F5F5F7;
+    height: 1px;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.message-box > img {
+    width: 48px;
+    height: 48px;
+}
+
+.text-container {
+    margin-left: 12px;
+}
+
+.message-box:hover, .active-box {
+    background-color: #FAFAFA;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.text-container > h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.text-container > p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.top {
+    padding: 24px 32px 24px 48px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #F5F5F7;
+}
+
+.user-box {
+    display: flex;
+    min-width: 164px;
+}
+
+.send-message-box {
+    background-color: #FFFFFF;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 26px 32px 33px 30px;
+    border: 1px solid #F5F5F7;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons > img {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.bottom {
+    height: 100%;
+    background-color: #F5F5F7;
+}

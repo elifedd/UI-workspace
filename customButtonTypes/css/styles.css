@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.container {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    height: 150px;
+    width: 300px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 32px;
+    height: 32px;
+    background-color: #D6D8E6;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#checked::after {
+    font: var(--fa-font-solid);
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 20px;
+    transform: scale(0);
+    transition: all 0.4s;
+    color: #FFFFFF;
+}
+
+#selected::after {
+    font: var(--fa-font-solid);
+    content: "\f111";
+    font-weight: 900;
+    font-size: 16px;
+    transform: scale(0);
+    transition: all 0.4s;
+    color: #FFFFFF;
+}
+
+#checked:checked, #selected:checked, #on:checked {
+    background-color: #414796;
+}
+
+#checked:checked::after, #selected:checked::after {
+    transform: scale(1);
+}
+
+#checked:focus, #selected:focus, #on:focus {
+    outline: 8px solid #E3DBFE;
+}
+
+#unchecked:disabled, #unselected:disabled, #off:disabled {
+    background-color: #E3E3EE;
+}
+
+#unchecked:hover, #unselected:hover, #off:hover {
+    cursor: not-allowed;
+}
+
+#on, #off {
+    width: 64px;
+    border-radius: 16px;
+}
+
+#on, #off {
+    position: relative;
+}
+
+#on::after, #off::after {
+    font: var(--fa-font-solid);
+    content: "\f111";
+    font-weight: 900;
+    font-size: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 6px;
+    transition: 0.4s;
+}
+
+#on:checked::after {
+    transform: translateX(29px);
+    transition: 0.4s;
+}
